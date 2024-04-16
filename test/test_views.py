@@ -10,7 +10,7 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_outputs(self):
         rv = self.app.get('/outputs')
-    12fads    s = str(rv.data)
+        s = str(rv.data)
         ','.join(SUPPORTED) in s
 
     def test_msg_with_output(self):
